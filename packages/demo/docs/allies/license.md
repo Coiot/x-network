@@ -1,3 +1,8 @@
+---
+title: License
+date: Wednesday September 9th, 2020
+---
+
 # LICENSE
 
 The MIT License (MIT)
