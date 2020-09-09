@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {    
+    "develop": "yarn workspace demo develop",
+    "build": "yarn workspace demo build",
+    "optimize-images": "yarn workspace demo optimize",
+    "patch": "yarn workspace vuepress-theme-book version --patch",
+    "minor": "yarn workspace vuepress-theme-book version --minor",
+    "major": "yarn workspace vuepress-theme-book version --major",
+    "publish-theme": "yarn workspace vuepress-theme-book publish"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
