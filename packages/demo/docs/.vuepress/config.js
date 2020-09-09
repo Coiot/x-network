@@ -8,21 +8,17 @@ module.exports = {
     logo: "/logo.png",
     searchPlaceholder: "Search...",
     lastUpdated: "Last Updated",
-    docsRepo: "cyrilf/vuepress-theme-book/tree/master/packages/demo",
+    docsRepo: "Coiot/x-network/",
     docsDir: "docs",
-    editLinks: true,
+    editLinks: false,
     editLinkText: "Edit this page on Github",
     nav: [
       { text: "Home", link: "/" },
       {
         text: "Github",
         link:
-          "https://github.com/cyrilf/vuepress-theme-book/tree/master/packages/vuepress-theme-book"
+          "https://github.com/Coiot/x-network"
       },
-      {
-        text: "Default Theme Config",
-        link: "https://vuepress.vuejs.org/theme/default-theme-config.html"
-      }
     ],
     sidebar: {
       "/": [
@@ -60,10 +56,29 @@ module.exports = {
     }
   },
   plugins: [
+    'vuepress-plugin-janitor',
     [
-      "vuepress-plugin-clean-urls",
+      'vuepress-plugin-medium-zoom',
       {
-        normalSuffix: "/"
+        selector: '.medium img',
+        delay: 1000,
+        options: {
+          background: 'rgba(27, 27, 27, 0.9)',
+          scrollOffset: 110,
+        }
+      }
+    ],
+    'vuepress-plugin-autometa',
+    ['vuepress-plugin-clean-urls',
+      {
+        normalSuffix: '/'
+      }
+    ],
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true
       }
     ]
   ],

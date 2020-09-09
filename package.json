@@ -1,6 +1,6 @@
 {
   "private": true,
-  "scripts": {    
+  "scripts": {
     "develop": "yarn workspace demo develop",
     "build": "yarn workspace demo build",
     "optimize-images": "yarn workspace demo optimize",
