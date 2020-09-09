@@ -8,12 +8,12 @@ module.exports = {
     logo: "/logo.jpg",
     searchPlaceholder: "Search...",
     lastUpdated: "Last Updated",
-    docsRepo: "Coiot/x-network",
+    docsRepo: "Coiot/x-network/tree/master/packages/demo/docs",
     docsDir: "docs",
     editLinks: false,
     editLinkText: "Edit this page on Github",
     nav: [
-      { text: "Home", link: "/" },
+      // { text: "Home", link: "/" },
       {
         text: "Github",
         link:
@@ -23,12 +23,13 @@ module.exports = {
     sidebar: {
       "/": [
         {
-          title: "Events",
+          title: "",
           collapsable: false,
           sidebarDepth: 0,
           children: [
-            ["/", "Latest"],
-            ["/archive", "Archive"]]
+            ["/", "Upcoming Events"]
+            // ["/archive", "Archive"]
+          ]
         },
         {
           title: "The Network",
@@ -42,19 +43,21 @@ module.exports = {
           ]
         },
         {
-          title: "Allies",
+          title: "Join",
           collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            ["/join/chat_groups", "Chat Groups"],
+            ["/join/contribute", "How to Contribute"]]
+        },
+        {
+          title: "Allies",
+          collapsable: true,
           children: [
             ["/allies/contributing", "Contributing ✨"],
             ["/allies/license", "License 📚"]
           ]
         },
-        {
-          title: "Join",
-          collapsable: false,
-          sidebarDepth: 0,
-          children: [["/allies/contributing", "How to Contribute"]]
-        }
       ]
     }
   },
