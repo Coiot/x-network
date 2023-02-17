@@ -54,7 +54,7 @@ module.exports = {
           title: "Allies",
           collapsable: true,
           children: [
-            ["/allies/license", "License 📚"]
+            ["/allies/license", "Organizations"]
           ]
         },
       ]
