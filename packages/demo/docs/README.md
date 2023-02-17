@@ -5,5 +5,3 @@
 </div>
 
 Welcome :wave:
-
-Update

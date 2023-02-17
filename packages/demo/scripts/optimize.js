@@ -6,7 +6,7 @@ console.log("Optimizing demo site images")
 
 const matches = glob.sync("**/**/*.{png,jpg,jpeg}")
 const MAX_WIDTH = 1800
-const QUALITY = 75
+const QUALITY = 70
 
 Promise.all(
   matches.map(async (match) => {

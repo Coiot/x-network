@@ -14,11 +14,11 @@ module.exports = {
     editLinkText: "Edit this page on Github",
     nav: [
       // { text: "Home", link: "/" },
-      {
-        text: "Github",
-        link:
-          "https://github.com/Coiot/x-network"
-      },
+      // {
+      //   text: "Github",
+      //   link:
+      //     "https://github.com/Coiot/x-network"
+      // },
     ],
     sidebar: {
       "/": [
@@ -54,7 +54,9 @@ module.exports = {
           title: "Allies",
           collapsable: true,
           children: [
-            ["/allies/license", "Organizations"]
+            ["/allies/license", "Non-profits"],
+            ["/allies/license", "Businesses"],
+            ["/allies/license", "Foundations"]
           ]
         },
       ]
