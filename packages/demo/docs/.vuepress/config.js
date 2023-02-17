@@ -27,12 +27,12 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 0,
           children: [
-            ["/", "Upcoming Events"]
+            ["/", "Home"]
             // ["/archive", "Archive"]
           ]
         },
         {
-          title: "The Network",
+          title: "Network",
           collapsable: false,
           children: [
             ["/network/rsos", "RSOs"],
@@ -54,9 +54,9 @@ module.exports = {
           title: "Allies",
           collapsable: true,
           children: [
-            ["/allies/license", "Non-profits"],
-            ["/allies/license", "Businesses"],
-            ["/allies/license", "Foundations"]
+            ["/allies/np", "Non-profits"],
+            ["/allies/b", "Businesses"],
+            ["/allies/f", "Foundations"]
           ]
         },
       ]

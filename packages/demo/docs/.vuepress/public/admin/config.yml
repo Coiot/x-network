@@ -10,7 +10,7 @@ collections:
   - name: "event" # Used in routes, e.g., /admin/collections/blog
     label: "Events" # Used in the UI
     folder: "packages/demo/docs/events" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
+    create: false # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'yaml-frontmatter'
     editor: 
@@ -24,11 +24,11 @@ collections:
   - name: "network" # Used in routes, e.g., /admin/collections/blog
     label: "Network" # Used in the UI
     folder: "packages/demo/docs/network" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
+    create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'yaml-frontmatter'
     editor: 
-      preview: false 
+      preview: true 
     sort: "title:asc" # Default is title:asc
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
@@ -50,7 +50,7 @@ collections:
   - name: "allies" # Used in routes, e.g., /admin/collections/blog
     label: "Allies" # Used in the UI
     folder: "packages/demo/docs/allies" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
+    create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'yaml-frontmatter'
     editor: 
