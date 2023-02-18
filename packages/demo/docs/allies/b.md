@@ -1,5 +1,5 @@
 ---
-title: Businesses 
+title: Businesses
 date: Wednesday September 9th, 2020
 ---
-Example Text
+Let's make an edit here.
